@@ -1,0 +1,317 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 🔹 Global Dark Mode Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a; /* Deep Dark Background */
+  color: #f8f9fa; /* Light Gray Text */
+  line-height: 1.6;
+}
+
+/* 🔹 Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #121212; /* Darker Navbar */
+  padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* 🔹 Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.about-btn {
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #121212;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+  background: #f8f9fa;
+}
+
+/* 🔹 Sections */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #121212; /* Dark Background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Tech Stack - Side by Side Layout */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between items */
+  padding: 20px;
+  max-width: 600px; /* Adjust the width */
+  margin: 0 auto;
+}
+
+/* Individual Tech Stack Items */
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
+  width: 100px; /* Fixed width to align properly */
+  height: 100px; /* Fixed height for equal-sized boxes */
+}
+
+/* Tech Stack Icons */
+.stack-item img {
+  width: 40px; /* Adjusted for consistency */
+  height: auto;
+  filter: brightness(0.85);
+  transition: filter 0.2s;
+}
+
+/* Hover Effect */
+.stack-item:hover {
+  background: #1e1e1e; /* Keep the box background unchanged */
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0px 0px 10px 5px rgba(255, 204, 0, 0.6); /* Soft glow effect */
+}
+
+
+
+/* Tech Stack Labels */
+.stack-item p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+/* 🔹 Projects Section */
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project img{
+  max-width: 50px;
+  height:auto;
+}
+
+.project {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Ensures icon is positioned relative to this */
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.5); /* Glow effect */
+}
+
+.github-icon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 15px; /* Keeps it at the bottom */
+  left: 50%; /* Moves it to the center horizontally */
+  transform: translate(-50%, 0); /* Centers it properly */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  z-index: 2;
+}
+
+
+.github-icon:hover {
+  transform: scale(1.2); /* Slightly stronger hover effect */
+  opacity: 0.8;
+}
+
+/* 🔹 Experience Section */
+#experience {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #121212;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.experience-card {
+  padding: 15px;
+  background: #232323;
+  border-left: 5px solid #ffcc00;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.experience-card h3 {
+  margin: 5px 0;
+  color: #ffcc00;
+}
+
+.experience-card p {
+  font-size: 14px;
+  color: #f8f9fa;
+}
+
+.experience-card ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.experience-card ul li {
+  margin: 5px 0;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.experience-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+/* 🔹 Contact Section */
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Keeps heading and links aligned */
+  align-items: center;
+  justify-content: center; 
+  gap: 10px; /* Adjust spacing */
+}
+
+/* Ensures links are in the same line */
+#contact-links {
+  display: flex; /* Change from block to flex */
+  justify-content: center; /* Center-aligns links */
+  gap: 30px; /* Adds spacing between links */
+  margin-top: 10px;
+}
+
+#contact-links p {
+  gap: 15px; /* Adjusts spacing between icons */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  object-fit: contain; /* Ensures images scale properly */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ensures proper styling */
+#contact a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+/* 🔹 Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background: #121212;
+  color: white;
+}
+
+/* 🔹 Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 768px) {
+  section {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    text-align: center;
+  }
+}
