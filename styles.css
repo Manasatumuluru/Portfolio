@@ -190,7 +190,7 @@ section {
 
 /* 🔹 Experience Section */
 #experience {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 30px;
   background: #121212;
@@ -198,12 +198,20 @@ section {
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 .experience-card {
+  flex: 1 1 45%;
   padding: 15px;
   background: #232323;
   border-left: 5px solid #ffcc00;
   border-radius: 8px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .experience-card h3 {
@@ -214,26 +222,6 @@ section {
 .experience-card p {
   font-size: 14px;
   color: #f8f9fa;
-}
-
-.experience-card ul {
-  list-style: none;
-  padding-left: 10px;
-}
-
-.experience-card ul li {
-  margin: 5px 0;
-  font-size: 14px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.experience-card ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #ffcc00;
-  font-size: 18px;
 }
 
 /* 🔹 Contact Section */
